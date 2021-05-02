@@ -5,20 +5,65 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: linear-gradient(to top, #aaa9e4 0%, #40e2cd 100%);
 }
 
 form {
   display: flex;
   flex-flow: column;
+  background-color: #eeeeec48;
+  border-width: 2px; border-style: solid; border-color: #340c40; border-radius: 10px; margin: 5px 10px;
+  padding: 50px 50px;
 }
 
-input,
-button,
-a {
+input, button, a {
   outline: none;
 }
 
-form .linha {
+.linha {
+  padding: 5px;
+  margin:5px;
   display: flex;
   flex-flow: row; /* column = form vertical, row = form horizontal */
+}
+
+#linha_4 {
+  text-align: center;
+  font-size: 20px;
+  color: #295BF2;
+}
+
+button, #linha_3 {
+  text-align: right;
+  border-width: 1px; border-style: solid; border-color: #044e4e; border-radius: 10px; padding: 10px 50px;
+  font-size: 20px;
+  color: #29f2e1;
+  padding: 10px 140px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #000000;
+  transition: font-size 90px;
+  transform: perspective(100px) translateZ(15px);
+}
+
+#linha_1 {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: 'Acme', sans-serif;;
+}
+
+input {
+  border-width: 2px; border-style: solid; border-color: #0a6954; border-radius: 10px; margin: 5px 10px;
+  font-size: 20px;
+}
+
+.linha_2 {
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #295BF2;
 }
